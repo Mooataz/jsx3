@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
-
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import cat from './cat.jpg';
+import pub from './pub.jpg'
+import titlered from './form.css'
+import ved from './ved.mp4'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <br/>
+      
+      <div class='div'>
+
+ <h1 class='titlered'>Try</h1>
+
+ <br />
+
+ <img src={cat}/>
+
+ <br />
+
+ <img src={pub}/>
+
+</div>
+
+<video width="320" height="240" controls>
+
+ <source src={ved} type="video/mp4" />
+
+</video>
     </div>
   );
 }
